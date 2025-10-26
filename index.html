@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rakesh — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#home">Rakesh</a>
+      </div>
+
+      <nav id="nav" class="nav">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>Hi, I'm <span class="accent">Rakesh</span></h1>
+        <p class="lead">Front-end developer &amp; web enthusiast — I build clean, responsive websites.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn">See my work</a>
+          <a href="#contact" class="btn btn-ghost">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="muted">A few highlights — click to view (links are placeholders).</p>
+
+        <div class="grid projects-grid">
+          <article class="card">
+            <div class="card-media">Screenshot</div>
+            <h3>Portfolio Website</h3>
+            <p>Responsive portfolio built with HTML/CSS/JS.</p>
+            <div class="card-actions">
+              <a href="#" class="link">View</a>
+              <a href="#" class="link">Code</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">Screenshot</div>
+            <h3>Todo App</h3>
+            <p>Simple Todo with localStorage and drag/drop.</p>
+            <div class="card-actions">
+              <a href="#" class="link">View</a>
+              <a href="#" class="link">Code</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">Screenshot</div>
+            <h3>Shop UI</h3>
+            <p>Modern ecommerce mockup with product filters.</p>
+            <div class="card-actions">
+              <a href="#" class="link">View</a>
+              <a href="#" class="link">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container about-inner">
+        <h2 class="section-title">About me</h2>
+        <p>I’m Rakesh — I design and code user-friendly interfaces. I enjoy turning concepts into pixel-perfect, responsive websites. Currently learning new JS frameworks and improving performance skills.</p>
+
+        <ul class="skills">
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript (ES6+)</li>
+          <li>Responsive Design</li>
+          <li>Version control (Git)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="muted">Want to work together? Send a message.</p>
+
+        <form id="contact-form" class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send</button>
+            <button type="reset" class="btn btn-ghost">Reset</button>
+          </div>
+        </form>
+
+        <p class="muted small">Or email: <a href="mailto:hello@rakesh.dev">hello@rakesh.dev</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Rakesh — Built with ❤️</p>
+      <p><a href="#" class="small-link">GitHub</a> · <a href="#" class="small-link">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
